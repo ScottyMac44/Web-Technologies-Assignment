@@ -22,6 +22,7 @@ button {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    color: white;
 }
 
 .links {
@@ -30,22 +31,18 @@ button {
 
 .dark-theme {
     background-color: #5900b3;
-    color: white;
 }
 
 .new-note {
     background-color: #006149;
-    color: white;
 }
 
 .save {
     background-color: #006149;
-    color: white;
 }
 
 .cancel {
     background-color: #b30000;
-    color: white;
 }
 
 .grid-container {
