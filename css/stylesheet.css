@@ -1,6 +1,6 @@
 html * {
     font-family: 'Montserrat', sans-serif;
-    color:cadetblue;
+    color:#366768;
 }
 
 img {
@@ -34,12 +34,12 @@ button {
 }
 
 .new-note {
-    background-color: #009973;
+    background-color: #006149;
     color: white;
 }
 
 .save {
-    background-color: #009973;
+    background-color: #006149;
     color: white;
 }
 
@@ -88,6 +88,5 @@ button {
         display: flex;
         flex-direction: column;
     }
-
 
 }
