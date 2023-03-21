@@ -1,6 +1,6 @@
 html * {
     font-family: 'Montserrat', sans-serif;
-    
+    color:cadetblue;
 }
 
 img {
@@ -10,49 +10,84 @@ img {
 
 textarea {
     width: 100%;
-    height:100%;
+    height:200px;
+    background-color: #ffe6cc;
+}
+
+button {
+    border-radius: 8px;
+    border-style: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.links {
+    text-align: right;
+}
+
+.dark-theme {
+    background-color: #5900b3;
+    color: white;
+}
+
+.new-note {
+    background-color: #009973;
+    color: white;
+}
+
+.save {
+    background-color: #009973;
+    color: white;
+}
+
+.cancel {
+    background-color: #b30000;
+    color: white;
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr 1fr;
     background-color: #ffdab3;
-    
-
+    column-gap: 15px;
 }
     
-    .grid-menu { grid-area: 1 / 1 / 6 / 2;
+    .grid-menu { 
+        grid-area: 1 / 1 / 4 / 2;
         background-color: #ffe6cc;
         justify-content: center;
+        padding: 15px;
     }
 
-    header { grid-area: 1 / 2 / 2 / 6;
-        justify-content: center;
+    header { 
+        grid-area: 1 / 2 / 2 / 3;
+        text-align: center;
     }
 
-    main { grid-area: 2 / 2 / 5 / 6;
-        justify-content: center;
+    main { 
+        grid-area: 2 / 2 / 3 / 3;
+        padding-bottom: 30px;
+        height: fit-content;
     }
 
-    footer { grid-area: 5 / 2 / 6 / 6;
-        justify-content: center;
+    footer { 
+        grid-area: 3 / 2 / 4 / 3;
+        text-align: center;
     }
 
 
 
 
 @media screen and (max-width: 768px) {
+
     .grid-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-    }
-    
-    .grid-item {
-        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
     }
 
-    .grid-menu { grid-area: 1 / 1 / 6 / 2;
-        display: hidden;
-    }
-  }
+
+}
