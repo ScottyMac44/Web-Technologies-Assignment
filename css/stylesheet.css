@@ -1,6 +1,14 @@
 html * {
     font-family: 'Montserrat', sans-serif;
+    
+}
+
+.lightThemeText {
     color: #366768;
+}
+
+.darkThemeText {
+    color: lightcyan;
 }
 
 html,body {
@@ -16,19 +24,25 @@ img {
 textarea {
     width: 100%;
     height: 70%;
-    background-color: #ffe6cc;
 }
 
 button {
     border-radius: 8px;
-    border-style: none;
+    border-style: groove;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     color: white;
-    height: 10%
+    margin: 5px;
+}
+
+.light-theme {
+    background-color: #ffdab3;
+}
+
+.light-theme2 {
+    background-color: #ffe6cc;
 }
 
 .links {
@@ -37,19 +51,19 @@ button {
     height: 10%;
 }
 
-.dark-theme {
+#themeToggle {
     background-color: #5900b3;
 }
 
-.new-note {
+#new-note {
     background-color: #006149;
 }
 
-.save {
+#save {
     background-color: #006149;
 }
 
-.cancel {
+#cancel {
     background-color: #b30000;
 }
 
@@ -57,13 +71,11 @@ button {
     display: grid;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 3fr 1fr;
-    background-color: #ffdab3;
     column-gap: 15px;
 }
     
     .grid-menu { 
         grid-area: 1 / 1 / 4 / 2;
-        background-color: #ffe6cc;
         justify-content: center;
         padding: 15px;
     }
@@ -83,6 +95,15 @@ button {
         grid-area: 3 / 2 / 4 / 3;
         text-align: center;
     }
+
+
+.grid-dark-theme {
+    background-color: #001933;
+}
+
+.grid-menu-dark-theme {
+    background-color: #00254c;
+}
 
 
 
