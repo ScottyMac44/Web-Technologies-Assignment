@@ -25,3 +25,28 @@ themeToggleButton.addEventListener('click', () => {
         themeToggleButton.innerText = 'Dark Theme';
     }
 });
+
+const cancelButton = document.getElementById('cancel')
+const saveButton = document.getElementById('save')
+
+cancelButton.addEventListener('click', () => {
+    textArea.classList.toggle('hidden');
+    cancelButton.classList.toggle('hidden');
+    saveButton.classList.toggle('hidden'); 
+});
+
+const newNoteButton = document.getElementById('newNote')
+
+newNoteButton.addEventListener('click', () => {
+    if (textArea.classList.contains('hidden')) {
+        textArea.classList.toggle('hidden');
+        cancelButton.classList.toggle('hidden');
+        saveButton.classList.toggle('hidden'); 
+    } else {
+        textArea.value = '';
+    }
+});
+
+let notesArray = {
+    title:'note one', body:'this is my first note'
+};

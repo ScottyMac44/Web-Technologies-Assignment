@@ -1,14 +1,7 @@
+/*Standart styles*/
 html * {
     font-family: 'Montserrat', sans-serif;
     
-}
-
-.lightThemeText {
-    color: #366768;
-}
-
-.darkThemeText {
-    color: lightcyan;
 }
 
 html,body {
@@ -26,6 +19,12 @@ textarea {
     height: 70%;
 }
 
+.links {
+    text-align: right;
+    margin-right: 20px;
+    height: 10%;
+}
+
 button {
     border-radius: 8px;
     border-style: groove;
@@ -37,6 +36,20 @@ button {
     margin: 5px;
 }
 
+
+/*Togglign classes*/
+.hidden {
+    visibility: hidden;
+}
+
+.lightThemeText {
+    color: #366768;
+}
+
+.darkThemeText {
+    color: lightcyan;
+}
+
 .light-theme {
     background-color: #ffdab3;
 }
@@ -45,17 +58,21 @@ button {
     background-color: #ffe6cc;
 }
 
-.links {
-    text-align: right;
-    margin-right: 20px;
-    height: 10%;
+.grid-dark-theme {
+    background-color: #001933;
 }
 
+.grid-menu-dark-theme {
+    background-color: #00254c;
+}
+
+
+/*Button Id styles*/
 #themeToggle {
     background-color: #5900b3;
 }
 
-#new-note {
+#newNote {
     background-color: #006149;
 }
 
@@ -67,6 +84,8 @@ button {
     background-color: #b30000;
 }
 
+
+/*Grid  maker*/
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 4fr;
@@ -94,20 +113,11 @@ button {
     footer { 
         grid-area: 3 / 2 / 4 / 3;
         text-align: center;
+        z-index: -1;
     }
 
 
-.grid-dark-theme {
-    background-color: #001933;
-}
-
-.grid-menu-dark-theme {
-    background-color: #00254c;
-}
-
-
-
-
+/*mobile formatter*/
 @media screen and (max-width: 768px) {
 
     .grid-container {
