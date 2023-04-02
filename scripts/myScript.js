@@ -18,4 +18,10 @@ themeToggleButton.addEventListener('click', () => {
     textArea.classList.toggle('grid-menu-dark-theme');
     textArea.classList.toggle('darkThemeText');
     document.body.classList.toggle('darkThemeText');
+
+    if (themeToggleButton.innerText == 'Dark Theme') {
+        themeToggleButton.innerText = 'Light Theme';
+    } else {
+        themeToggleButton.innerText = 'Dark Theme';
+    }
 });
