@@ -46,10 +46,6 @@ button {
     color: #366768;
 }
 
-.darkThemeText {
-    color: lightcyan;
-}
-
 .light-theme {
     background-color: #ffdab3;
 }
@@ -64,6 +60,10 @@ button {
 
 .grid-menu-dark-theme {
     background-color: #00254c;
+}
+
+.darkThemeText {
+    color: lightcyan;
 }
 
 
