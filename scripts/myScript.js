@@ -8,6 +8,10 @@ const gridContainer = document.querySelector('.grid-container');
 const textArea = document.querySelector('textarea');
 const notesList = document.getElementById('notesList');
 
+var notesArray = [
+    {title:'note one', body:'this is my first note'}
+];
+
 
 themeToggleButton.addEventListener('click', () => {
     gridContainer.classList.toggle('grid-dark-theme');
@@ -40,10 +44,6 @@ newNoteButton.addEventListener('click', () => {
         textArea.value = '';
     }
 });
-
-var notesArray = [
-    {title:'note one', body:'this is my first note'}
-];
 
 
 saveButton.addEventListener('click', () => {
